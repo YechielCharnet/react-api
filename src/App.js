@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route path="posts" element={<PostsList />} />

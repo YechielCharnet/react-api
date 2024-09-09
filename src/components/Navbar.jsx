@@ -4,31 +4,17 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <ul>
-          {/* <li>
-            <Link to="/">Home</Link>
-          </li> */}
-          <li>
-            <Link to="/Comments">Comments</Link>
-          </li>
-          <li>
-            <Link to="/Photos">Photos</Link>
-          </li>
-          <li>
-            <Link to="/Albums">Albums</Link>
-          </li>
-          <li>
-            <Link to="/Posts">Posts</Link>
-          </li>
-          <li>
-            <Link to="/Todos">Todos</Link>
-          </li>
-        </ul>
+        <Link to="/Comments"><button>Comments</button></Link>
+        <Link to="/Photos"><button>Photos</button></Link>
+        <Link to="/Albums"><button>Albums</button></Link>
+        <Link to="/Posts"><button>Posts</button></Link>
+        <Link to="/Todos"><button>Todos</button></Link>
+        <Link to="/"><button>Home</button></Link>
       </nav>
 
       <Outlet />
     </>
-  )
+  );
 };
 
 export default Navbar;

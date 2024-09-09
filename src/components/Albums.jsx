@@ -4,14 +4,14 @@ const Albums = () => {
   const [albums, setAlbums] = useState([]);
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/Albums')
+    fetch('https://jsonplaceholder.typicode.com/Albums?userId=1')
       .then(response => response.json())
       .then(data => setAlbums(data));
   }, []);
 
   return (
     <div>
-      <h1>Albums</h1>
+      <h1>Albums for User 1</h1>
       <ul>
         {albums.map(albums => (
           <li key={albums.id}>
