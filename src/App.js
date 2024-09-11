@@ -6,6 +6,9 @@ import Photos from "./components/Photos";
 import Todos from "./components/Todos";
 import Navbar from "./components/Navbar";
 import { Outlet } from "react-router-dom";
+import "./App.css";
+
+
 
 function App() {
   return (
